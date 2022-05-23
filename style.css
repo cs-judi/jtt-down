@@ -1,1 +1,19 @@
-* {margin:0 auto}
+* {margin:0 auto; font-family:Arial, Helvetica, sans-serif;}
+.links {list-style-type: none; padding: 0; margin: 15px 0 0;}
+.links li {display:inline-block;}
+.links li a {display:block; transition:1s; margin-right:10px; background:#003845; padding:15px; color:#FFF; text-decoration:none; text-transform:uppercase; letter-spacing:1px}
+.links li a:hover {background:#065364;}
+body {height:100vh; display:flex; align-items:center; vertical-align:middle; background:linear-gradient(24deg, #FFF, #ede3e3)}
+#main {display:flex; background:#FFF; box-shadow:15px 0 25px rgba(0,0,0,0.4);}
+#main div {padding:20px; background:#FFF;}
+#main img {width:300px;}
+@media only screen and (max-width: 800px) {
+    #main {
+      display: block;
+      text-align: center;
+    }
+    #main img {
+        width: 200px;
+        margin-top: 20px;
+    }
+  }
