@@ -39,8 +39,8 @@ body {height:100vh; display:flex; align-items:center; vertical-align:middle;}
   background-size: contain;
   margin: 0;
 }
-@media only screen and (max-width: 800px) {
-  body {height: auto}
+@media only screen and (max-width: 850px) {
+  body {height: 100vh}
     #main {
       width: 100%;
       padding: 0px;
