@@ -1,19 +1,56 @@
 * {margin:0 auto; font-family:Arial, Helvetica, sans-serif;}
 .links {list-style-type: none; padding: 0; margin: 15px 0 0;}
 .links li {display:inline-block;}
-.links li a {display:block; transition:1s; margin-right:10px; background:#003845; padding:15px; color:#FFF; text-decoration:none; text-transform:uppercase; letter-spacing:1px}
-.links li a:hover {background:#065364;}
-body {height:100vh; display:flex; align-items:center; vertical-align:middle; background:linear-gradient(24deg, #FFF, #ede3e3)}
-#main {display:flex; background:#FFF; box-shadow:15px 0 25px rgba(0,0,0,0.4);}
-#main div {padding:20px; background:#FFF;}
-#main img {width:300px;}
+.links li a {
+  display: block;
+  border: 2px solid #003845;
+  background: #FFF;
+  transition: .5s;
+  border-radius: 25px;
+  width: 200px;
+  margin: 0 10px 20px;
+  padding: 15px;
+  color: #003845;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.links li a:hover {background:#003845; color:#FFF; box-shadow:0 10px 15px rgba(0,0,0,0.2)}
+body {height:100vh; display:flex; align-items:center; vertical-align:middle; background:linear-gradient(24deg, #FFF, #ede7dd)}
+#main {display:flex; margin-top: -150px; background:#FFF; width:70%; max-width:1200px; box-shadow:0 20px 50px rgba(0,0,0,0.3);}
+#main h1 {font-size: 3rem;}
+#main h2 {
+  font-weight: normal; 
+  color:#838383;
+  letter-spacing: 1px; 
+  text-align:center;
+  text-transform:uppercase;
+  font-size: 1.3rem; 
+  margin: 10px 0 35px;
+}
+#main div {text-align: center; padding:40px 20px; background:#FFF;}
+#main p {    color: #003845;
+  font-size: 1.2rem;
+  letter-spacing: 2px;}
+#main #logo-area {
+  width: 40%;
+  background: #bf311a url(logo.png) center center no-repeat;
+  background-size: contain;
+  margin: 0;
+}
 @media only screen and (max-width: 800px) {
     #main {
+      width: 100%;
+      padding: 20px;
+      margin: -150px 25px 25px;
       display: block;
       text-align: center;
     }
     #main img {
         width: 200px;
-        margin-top: 20px;
     }
+    #main #logo-area { display:block; position:relative; top: -50px; margin:0 auto; height: 100px;}
+    .links li {display:block; }
+    .links li a { width:auto; padding: 20px;}
+    #main div {padding-top:0;}
   }
