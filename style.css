@@ -18,26 +18,33 @@
 .links li a:hover {background:#003845; color:#FFF; box-shadow:0 10px 15px rgba(0,0,0,0.2)}
 html {background:linear-gradient(24deg, #FFF, #ede7dd)}
 body {height:100vh; display:flex; align-items:center; vertical-align:middle;}
-#main {display:flex; margin-top: -150px; background:#FFF; width:70%; max-width:1200px; box-shadow:0 20px 50px rgba(0,0,0,0.3);}
-#main h1 {font-size: 3rem;}
+#main {display:flex; margin-top: -150px; background:#FFF; width:85%; max-width:1200px; box-shadow:0 20px 50px rgba(0,0,0,0.3);}
+#main h1 {font-size: 3rem; font-family: 'Roboto Condensed', sans-serif;}
 #main h2 {
   font-weight: normal; 
-  color:#838383;
+  color:#5f5f5f;
   letter-spacing: 1px; 
   text-align:center;
   text-transform:uppercase;
   font-size: 1.3rem; 
-  margin: 10px 0 35px;
+  margin: 10px 0 20px;
+  font-family: 'Sora', sans-serif;
+
 }
 #main div {text-align: center; padding:40px 20px; background:#FFF;}
 #main p {    color: #003845;
   font-size: 1.2rem;
-  letter-spacing: 2px;}
+  letter-spacing: 2px;
+  font-family: 'Sora', sans-serif;
+}
 #main #logo-area {
   width: 40%;
   background: #bf311a url(logo.png) center center no-repeat;
   background-size: contain;
   margin: 0;
+}
+hr {
+  border: none;border-bottom: 4px solid #003845;width: 300px;margin: 20px auto 50px;
 }
 @media only screen and (max-width: 850px) {
   body {height: 100vh}
@@ -54,6 +61,7 @@ body {height:100vh; display:flex; align-items:center; vertical-align:middle;}
     }
     #main #logo-area { display:block; margin:0 auto; height: 100px;}
     .links li {display:block; }
-    .links li a { width:auto; padding: 20px;}
+    .links li a { width:auto; padding: 25px; background:#003845; color:#FFF}
+    .links li a:hover {background:#FFF; color:#003845}
     #main div {padding-top:0;}
   }
